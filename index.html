@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON RUNWAY</title>
+    <style>
+        body { background-color: #f0eee9; color: #4a4a4a; font-family: serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .container { text-align: center; padding: 40px; background: #ffffff; border-radius: 2px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); width: 90%; max-width: 500px; border-top: 5px solid #e6d5b8; }
+        h1 { font-size: 2rem; letter-spacing: 5px; color: #c5a059; margin-bottom: 30px; }
+        #display-area { width: 100%; height: 450px; background: #fdfcfb; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #eee; }
+        img { max-width: 100%; max-height: 100%; object-fit: cover; transition: 0.8s; }
+        .btn { background: #e6d5b8; color: #5a4d3a; border: none; padding: 15px 40px; letter-spacing: 2px; cursor: pointer; transition: 0.4s; margin-top: 30px; }
+        .btn:hover { background: #c5a059; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NEON RUNWAY</h1>
+        <div id="display-area"><img id="fashion-img" src="https://picsum.photos/800/1200?fashion=1"></div>
+        <button class="btn" onclick="document.getElementById('fashion-img').src='https://picsum.photos/800/1200?r='+Math.random()">不喜歡？更換造型</button>
+    </div>
+</body>
+</html>
